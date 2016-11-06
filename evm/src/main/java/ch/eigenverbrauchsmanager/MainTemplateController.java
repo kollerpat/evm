@@ -1,4 +1,4 @@
-package com.websystique.springmvc.controller;
+package ch.eigenverbrauchsmanager;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +21,10 @@ public class MainTemplateController {
     public String getPrintersTemplate() {
     	return "template/item_printers";	
     }
-
+    @RequestMapping(value="/webservice")
+    public String getWebserviceTemplate() {
+    	return "template/item_webservice";	
+    }
     @RequestMapping(value="/computerdetails")
     public String getComputerDetailsTemplate() {
     	return "template/item_computer_details";	

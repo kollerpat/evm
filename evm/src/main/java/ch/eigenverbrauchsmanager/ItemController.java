@@ -1,4 +1,4 @@
-package com.websystique.springmvc.controller;
+package ch.eigenverbrauchsmanager;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.websystique.springmvc.service.ItemService;
+import ch.eigenverbrauchsmanager.service.ItemService;
 
 @Controller
 @RequestMapping("/item")

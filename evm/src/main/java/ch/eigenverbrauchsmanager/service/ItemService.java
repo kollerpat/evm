@@ -1,4 +1,4 @@
-package com.websystique.springmvc.service;
+package ch.eigenverbrauchsmanager.service;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.websystique.springmvc.model;
+package ch.eigenverbrauchsmanager.model;
 
 public class Phone{
 	

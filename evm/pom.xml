@@ -1,11 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.websystique.springmvc</groupId>
-	<artifactId>Spring4MVCAngularJSRoutingExample</artifactId>
+	<groupId>ch.eigenverbrauchsmanager</groupId>
 	<packaging>war</packaging>
 	<version>1.0.0</version>
-	<name>Spring4MVCAngularJSRoutingExample Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<springframework.version>4.2.0.RELEASE</springframework.version>
@@ -75,12 +73,14 @@
 					<version>2.4</version>
 					<configuration>
 						<warSourceDirectory>src/main/webapp</warSourceDirectory>
-						<warName>Spring4MVCAngularJSRoutingExample</warName>
+						<warName>eigenverbrauchsmanager</warName>
 						<failOnMissingWebXml>false</failOnMissingWebXml>
 					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
-		<finalName>Spring4MVCAngularJSRoutingExample</finalName>
+		<finalName>eigenverbrauchsmanager</finalName>
 	</build>
+	<artifactId>evm</artifactId>
+	<name>evm Webapp</name>
 </project>

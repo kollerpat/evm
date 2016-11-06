@@ -1,4 +1,4 @@
-package com.websystique.springmvc.configuration;
+package ch.eigenverbrauchsmanager.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.velocity.VelocityViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.websystique.springmvc")
+@ComponentScan(basePackages = "ch.eigenverbrauchsmanager")
 public class HelloWorldConfiguration extends WebMvcConfigurerAdapter{
 	
 	

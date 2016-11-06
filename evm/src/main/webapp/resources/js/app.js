@@ -57,8 +57,11 @@ App.config(['$routeProvider', function($routeProvider) {
                     return ItemService.fetchSpecificItem('printers',$route.current.params.id);
                	}]
             }
-		})
-		
+		})		
+		.when('/items/webservice', {
+			templateUrl: 'items/webservice',
+			controller : "WebserviceController as webserviceCtrl"
+		})		
 		.otherwise({redirectTo:'/items/computers'});		
 }]);
 

@@ -1,4 +1,4 @@
-package com.websystique.springmvc.service;
+package ch.eigenverbrauchsmanager.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,10 +7,10 @@ import java.util.concurrent.atomic.AtomicLong;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
-import com.websystique.springmvc.model.Computer;
-import com.websystique.springmvc.model.Phone;
-import com.websystique.springmvc.model.Printer;
-import com.websystique.springmvc.model.State;
+import ch.eigenverbrauchsmanager.model.Computer;
+import ch.eigenverbrauchsmanager.model.Phone;
+import ch.eigenverbrauchsmanager.model.Printer;
+import ch.eigenverbrauchsmanager.model.State;
 
 @Service("itemService")
 public class ItemServiceImpl implements ItemService{

@@ -1,4 +1,4 @@
-package com.websystique.springmvc.configuration;
+package ch.eigenverbrauchsmanager.configuration;
 
 import java.io.IOException;
 
@@ -10,7 +10,6 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletResponse;
 
-//test1
 
 public class CORSFilter implements Filter {
 
