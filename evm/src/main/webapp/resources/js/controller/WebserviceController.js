@@ -1,7 +1,8 @@
 'use strict';
 
 App.controller("WebserviceController", function($scope) {
-    $scope.products = ["Milk", "Bread", "Cheese"];
+    $scope.products = ["German", "English", "Frensh"];
+    $scope.selectedName;
    
     $scope.addItem = function () {
         $scope.errortext = "";

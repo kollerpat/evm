@@ -5,7 +5,7 @@ App.factory('ItemService', ['$http', '$q', function($http, $q){
 	return {
 		
 			fetchAllItems: function(category) {
-					return $http.get('http://localhost:8080/eigenverbrauchsmanager/item/'+category)
+					return $http.get('http://localhost:8081/eigenverbrauchsmanager/item/'+category)
 							.then(
 									function(response){
 										return response.data;
@@ -18,7 +18,7 @@ App.factory('ItemService', ['$http', '$q', function($http, $q){
 			},
 		    
 			fetchSpecificItem: function(category,id) {
-				return $http.get('http://localhost:8080/eigenverbrauchsmanager/item/'+category+'/'+id)
+				return $http.get('http://localhost:8081/eigenverbrauchsmanager/item/'+category+'/'+id)
 						.then(
 								function(response){
 									return response.data;
