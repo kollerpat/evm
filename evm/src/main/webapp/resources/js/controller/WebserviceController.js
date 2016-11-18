@@ -3,6 +3,7 @@
 App.controller("WebserviceController", function($scope) {
 	$scope.products = [ "Item 1", "Item 2", "Item 3" ];
 
+	//Eigentlich würde man hier einen Service aufrufen 
 	$scope.jsonObject = {
 		"personen" : [ {
 			"Name" : "Patrick",
@@ -18,6 +19,8 @@ App.controller("WebserviceController", function($scope) {
 			"Vorname" : "Koller"
 		} ]
 	};
+	
+
 
 	$scope.addItem = function() {
 		$scope.errortext = "";

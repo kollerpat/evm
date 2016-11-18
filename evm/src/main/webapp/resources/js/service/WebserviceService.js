@@ -1,38 +1,22 @@
 'use strict';
 
-App.controller("WebserviceController", function($scope) {
-	$scope.products = [ "Item 1", "Item 2", "Item 3" ];
+App.factory('FamilyService', ['$http', '$q', function($http, $q){
 
-	//Eigentlich würde man hier einen Service aufrufen 
-	$scope.jsonObject = {
-		"personen" : [ {
-			"Name" : "Patrick",
-			"Vorname" : "Koller"
-		}, {
-			"Name" : "Michael",
-			"Vorname" : "Koller"
-		}, {
-			"Name" : "Heinz",
-			"Vorname" : "Koller"
-		}, {
-			"Name" : "Lotti",
-			"Vorname" : "Koller"
-		} ]
+	return {
+		
+			getAllFamilyMembers: function() {
+					return $http.get('http://localhost:8080/eigenverbrauchsmanager/item/'+category)
+							.then(
+									function(response){
+										return response.data;
+									}, 
+									function(errResponse){
+										console.error('Error while fetching family members');
+										return $q.reject(errResponse);
+									}
+							);
+			},
+		    
 	};
 
-	$scope.addItem = function() {
-		$scope.errortext = "";
-		if (!$scope.addMe) {
-			return;
-		}
-		if ($scope.products.indexOf($scope.addMe) == -1) {
-			$scope.products.push($scope.addMe);
-		} else {
-			$scope.errortext = "The item is already in your shopping list.";
-		}
-	}
-	$scope.removeItem = function(x) {
-		$scope.errortext = "";
-		$scope.products.splice(x, 1);
-	}
-});
+}]);
