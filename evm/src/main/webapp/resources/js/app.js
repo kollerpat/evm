@@ -7,15 +7,12 @@ App.config(['$routeProvider', function($routeProvider) {
 		.when('/items/webservice', {
 			templateUrl: 'items/webservice',
 			controller : "WebserviceController as webserviceCtrl"
+		})		
+		.when('/items/statistic', {
+			templateUrl: 'items/statistic'
+			//controller : "Webservice2Controller as webserviceCtrl"
 		})
-		.when('/items/webservice2', {
-			templateUrl: 'items/webservice2',
-			controller : "Webservice2Controller as webserviceCtrl"
-		})
-		.when('/test', {
-			templateUrl: 'items/test',
-			controller : "WebserviceController as webserviceCtrl"
-		})						
+					
 		.otherwise({redirectTo:'/items/webservice'});		
 }]);
 

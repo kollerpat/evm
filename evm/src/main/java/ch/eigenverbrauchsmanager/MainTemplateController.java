@@ -5,40 +5,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/items")
-public class MainTemplateController {
-	
-    @RequestMapping(value="/computers")
-    public String getComputersTemplate() {
-    	return "template/item_computers";	
-    }
+public class MainTemplateController {	
 
-    @RequestMapping(value="/phones")
-    public String getPhonesTemplate() {
-    	return "template/item_phones";	
-    }
-
-    @RequestMapping(value="/printers")
-    public String getPrintersTemplate() {
-    	return "template/item_printers";	
-    }
     @RequestMapping(value="/webservice")
     public String getWebserviceTemplate() {
-    	return "template/item_webservice";	
+    	return "template/webservice";	
     }
-    @RequestMapping(value="/computerdetails")
-    public String getComputerDetailsTemplate() {
-    	return "template/item_computer_details";	
+    
+    @RequestMapping(value="/statistic")
+    public String getStatisticTemplate() {
+    	return "template/statistic";	
     }
-
-    @RequestMapping(value="/phonedetails")
-    public String getPhoneDetailsTemplate() {
-    	return "template/item_phone_details";	
-    }
-
-    @RequestMapping(value="/printerdetails")
-    public String getPrinterDetailsTemplate() {
-    	return "template/item_printer_details";	
-    }
-
 }
 
