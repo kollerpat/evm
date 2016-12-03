@@ -1,6 +1,8 @@
 'use strict';
 
 App.controller("EigenverbrauchsController", function($scope, $http) {
+	$scope.products = [ "Item 1", "Item 2", "Item 3" ];
+
 	
 	/*
 	$scope.getstatisticData= function() {

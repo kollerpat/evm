@@ -5,13 +5,8 @@ var App = angular.module('myApp',['ngRoute']);
 App.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 		.when('/items/computers', {
-			templateUrl: 'items/computers',
+			templateUrl: 'items/statistics',
 			controller : "ItemListController as itemListCtrl",
-			resolve: {
-                async: ['ItemService', function(ItemService) {
-                    return ItemService.fetchAllItems('computers');
-               	}]
-            }
 		})
 		.when('/items/phones', {
 			templateUrl: 'items/phones',
@@ -62,9 +57,14 @@ App.config(['$routeProvider', function($routeProvider) {
 			templateUrl: 'items/webservice',
 			controller : "WebserviceController as webserviceCtrl"
 		})
+		.when('/statistics', {
+			templateUrl: 'statistics',
+			controller : "WebserviceController as webserviceCtrl"
+		})
+			
 		
-		.when('/items/statistics', {
-			templateUrl: 'items/statistics',
+		.when('/items/test', {
+			templateUrl: 'items/test',
 			controller : "WebserviceController as webserviceCtrl"
 		})
 				
