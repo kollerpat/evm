@@ -2,7 +2,7 @@
 
 App.controller("WebserviceController", function($scope, $http) {
 	$scope.products = [ "Item 1", "Item 2", "Item 3" ];
-
+	 
 	//Eigentlich würde man hier einen Service aufrufen 
 	$scope.jsonObject = {
 		"personen" : [ {
@@ -42,6 +42,14 @@ App.controller("WebserviceController", function($scope, $http) {
 	    $http.get('http://localhost:8081/eigenverbrauchsmanager/greeting').
         then(function(response) {
             $scope.greeting = response.data;
+        });
+	}
+	
+	$scope.getStatisticData= function() {
+	    $http.get('	http://localhost:8002/EM/App/getCurrentStatistics').
+        then(function(response) {
+        	window.alert("....test");
+            $scope.currentStatistics = response.data;
         });
 	}
 	

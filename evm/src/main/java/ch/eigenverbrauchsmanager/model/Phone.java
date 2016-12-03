@@ -8,8 +8,6 @@ public class Phone{
 	
 	private String model;
 	
-	private State state;
-	
 	private double price;
 
 	private double size;
@@ -20,12 +18,11 @@ public class Phone{
 	
 	private int camera;
 	
-	public Phone(long id,String brand, String model, State state, double price, 
+	public Phone(long id,String brand, String model, double price, 
 			double size, boolean sdCard, boolean replacableBattery,int camera){
 		this.id = id;
 		this.brand = brand;
 		this.model = model;
-		this.state = state;
 		this.price = price;
 		this.size = size;
 		this.sdCard =sdCard;
@@ -55,14 +52,6 @@ public class Phone{
 
 	public void setModel(String model) {
 		this.model = model;
-	}
-
-	public State getState() {
-		return state;
-	}
-
-	public void setState(State state) {
-		this.state = state;
 	}
 
 	public double getPrice() {
@@ -129,7 +118,7 @@ public class Phone{
 
 	@Override
 	public String toString() {
-		return "Phone [id=" + id + ", brand=" + brand + ", model=" + model + ", state=" + state + ", price=" + price
+		return "Phone [id=" + id + ", brand=" + brand + ", model=" + model + ", state=" +  ", price=" + price
 				+ ", size=" + size + ", sdCard=" + sdCard + ", replacableBattery=" + replacableBattery + ", camera="
 				+ camera + "]";
 	}
