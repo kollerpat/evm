@@ -61,7 +61,13 @@ App.config(['$routeProvider', function($routeProvider) {
 		.when('/items/webservice', {
 			templateUrl: 'items/webservice',
 			controller : "WebserviceController as webserviceCtrl"
-		})		
+		})
+		
+		.when('/items/statistics', {
+			templateUrl: 'items/statistics',
+			controller : "WebserviceController as webserviceCtrl"
+		})
+				
 		.otherwise({redirectTo:'/items/computers'});		
 }]);
 
